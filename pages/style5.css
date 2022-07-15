@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    background-image: url(images/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.nav1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    text-align: center;
+    align-items: center;
+}
+
+.wow {
+    text-align: start;
+    width: 30%;
+    text-decoration: none;
+    padding-left: 1%;
+}
+
+#main-menu {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+    width: 70%;
+}
+
+li a {
+    color: orangered;
+    text-decoration: none;
+    border-bottom: 1px solid darkblue;
+    margin-top: 4px;
+}
+
+.collapse {
+    display: none;
+}
+
+.navbar {
+    display: none;
+}
+
+.bg-dark {
+    display: none;
+}
+
+.navbar-toggler-icon {
+    display: none;
+}
+
+.definicion {
+    background-color: rgba(0, 119, 255, 0.4);
+    width: 40%;
+    height: auto;
+    padding: 2%;
+    text-align: center;
+    border-radius: 2rem;
+}
+
+.definicion p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.padre {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.collage {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.cajaa {
+    clear: both;
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    height: auto;
+    border-radius: 3rem;
+    background-color: rgba(255, 165, 0, .4);
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    margin: 0;
+}
+
+img {
+    border-radius: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+.last {
+    grid-column: 2;
+}
+
+footer {
+    margin-top: 3%;
+    font-size: 5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(0, 119, 255, 0.2);
+    padding: 1%;
+    color: rgb(50, 50, 50);
+    display: flex;
+    justify-content: end;
+}
+
+.footer h6 {
+    display: flex;
+    justify-content: end;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        display: block;
+    }
+    .nav1 {
+        display: none;
+    }
+    .collapse {
+        display: block;
+    }
+    .navbar-toggler-icon {
+        display: block;
+    }
+    .p-4 {
+        background-color: rgba(255, 255, 255, .3);
+    }
+    #main-menu1 {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: medium;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        margin-top: 1%;
+    }
+    .item {
+        margin-top: 8px;
+    }
+    .cajon {
+        margin: 1%;
+    }
+    .definicion {
+        width: 100%;
+        margin: 3%
+    }
+    .collage {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .cajaa {
+        margin: 3%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        height: auto;
+    }
+    .img {
+        width: 100%;
+        height: 100%;
+        padding: 1em;
+        margin: 0;
+    }
+    img {
+        border-radius: 100%;
+        height: 100%;
+        width: 100%;
+    }
+}
